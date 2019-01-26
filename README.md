@@ -1,1 +1,2 @@
-# java
+# java-projects
+# Samed Bicer
