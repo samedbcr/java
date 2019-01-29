@@ -20,7 +20,7 @@ public class Personel_Ekrani extends javax.swing.JFrame {
         Burada Table'ı ResultSet ile ekrana bastiracagiz.
         */
         try{
-        Connection conn = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Sammy\\Documents\\NetBeansProjects\\KitapSatisi\\kitaplar.db");
+        Connection conn = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Sammy\\Documents\\GitHub\\java\\KitapSatisi\\kitaplar.db");
         Statement statement = conn.createStatement();
         ResultSet rs = statement.executeQuery("SELECT * FROM kitaplistesi");
         
@@ -318,7 +318,7 @@ public class Personel_Ekrani extends javax.swing.JFrame {
         } 
         else{
             try{
-                Connection conn = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Sammy\\Documents\\NetBeansProjects\\KitapSatisi\\kitaplar.db");
+                Connection conn = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Sammy\\Documents\\GitHub\\java\\KitapSatisi\\kitaplar.db");
                 Statement statement = conn.createStatement();
                 String ins = "INSERT INTO kitaplistesison(adi,sayfa,yazar,yayinevi,fiyat)" + "VALUES('" + jTextField_Adi.getText() + 
                                   "','" + jTextField_Sayfa.getText() + "','" + jTextField_Yazar.getText() + 

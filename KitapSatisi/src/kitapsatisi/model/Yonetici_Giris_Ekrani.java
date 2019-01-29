@@ -105,7 +105,7 @@ public class Yonetici_Giris_Ekrani extends javax.swing.JFrame {
     private void jButton_girisActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_girisActionPerformed
         try{
                 //int control = 0;
-                Connection conn = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Sammy\\Documents\\NetBeansProjects\\KitapSatisi\\kitaplar.db");
+                Connection conn = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Sammy\\Documents\\GitHub\\java\\KitapSatisi\\kitaplar.db");
                 String check = "SELECT * FROM yoneticilistesi WHERE id = '" + jTextField_id.getText() + 
                                   "' AND pw = '" +String.valueOf(jPasswordField_pw.getPassword()) + "';";
                 Statement stmt = conn.createStatement();
