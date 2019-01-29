@@ -129,7 +129,7 @@ public class Uye_Olma_Ekrani extends javax.swing.JFrame {
         }
         else{
             try{
-                Connection conn = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Sammy\\Documents\\GitHub\\java\\KitapSatisi\\kitaplar.db");
+                Connection conn = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Sammy\\Documents\\NetBeansProjects\\KitapSatisi\\kitaplar.db");
                 Statement statement = conn.createStatement();
                 String ins = "INSERT INTO uyelistesi(kullaniciAdi, sifre)" + "VALUES('" + jTextField_kullaniciadi.getText() + 
                                   "','" + jTextField_sifre.getText() + "');";

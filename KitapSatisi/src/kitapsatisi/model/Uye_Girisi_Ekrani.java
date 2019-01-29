@@ -130,7 +130,7 @@ public class Uye_Girisi_Ekrani extends javax.swing.JFrame {
 
             try{
                 int control = 0;
-                Connection conn = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Sammy\\Documents\\GitHub\\java\\KitapSatisi\\kitaplar.db");
+                Connection conn = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Sammy\\Documents\\NetBeansProjects\\KitapSatisi\\kitaplar.db");
                 String check = "SELECT * FROM uyelistesi WHERE kullaniciAdi = '" + jTextField_kul_adi.getText() + 
                                   "' AND sifre = '" +String.valueOf(jPasswordField_sifre.getPassword()) + "';";
                 Statement stmt = conn.createStatement();
