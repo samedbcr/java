@@ -19,6 +19,7 @@ public class Main {
         switch (action){
             case 0:
                 System.out.println("\nShutting Down ^_^ ");
+                quit = true;
                 break;
             case 1:
                 mobilePhone.printContacts();
