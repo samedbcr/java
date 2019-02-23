@@ -59,7 +59,7 @@ public class Main {
     private static void addContact(){
         System.out.println("Enter new contact name: ");
         String name = scanner.nextLine();
-        System.out.println("Enter phone number: ");
+        System.out.println("Enter phone number:  ");
         String phoneNumber = scanner.nextLine();
         Contacts contact = new Contacts(name, phoneNumber);
         mobilePhone.addContact(contact);
